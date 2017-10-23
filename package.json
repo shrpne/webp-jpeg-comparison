@@ -1,0 +1,28 @@
+{
+  "name": "webp-jpeg-comparsion",
+  "version": "1.0.0",
+  "description": "Image minification comparsion",
+  "main": "index.js",
+  "scripts": {
+    "start": "node .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "shrpne",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {},
+  "devDependencies": {
+    "file-type": "^7.2.0",
+    "globby": "^6.1.0",
+    "image-ssim": "^0.2.0",
+    "imagemin-jpegtran": "^5.0.2",
+    "imagemin-mozjpeg": "^6.0.0",
+    "imagemin-webp": "^4.0.0",
+    "jpeg-js": "^0.3.3",
+    "make-dir": "^1.0.0",
+    "p-pipe": "^1.2.0",
+    "pify": "^3.0.0",
+    "pretty-bytes": "^4.0.2",
+    "replace-ext": "^1.0.0"
+  }
+}
