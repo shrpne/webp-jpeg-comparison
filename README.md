@@ -3,7 +3,7 @@
 
 Here I try to find out if it is really worth to convert images to [webp](https://developers.google.com/speed/webp/) instead of serve them as minified jpeg.
 
-To minify jpeg I use [mozjpeg](https://github.com/mozilla/mozjpeg) lossy compression first and [jpegtran](https://github.com/imagemin/imagemin-jpegtran) lossless compression after. For 70% of images jpegtran do nothing, but for the rest it helps to save 10-40% more.
+To minify jpeg I use [mozjpeg](https://github.com/mozilla/mozjpeg) lossy compression first ~~and [jpegtran](https://github.com/imagemin/imagemin-jpegtran) lossless compression after. For 70% of images jpegtran do nothing, but for the rest it helps to save 10-40% more~~ Looks like mozjpeg works fine without jpegtran since 3.2 version.
 
 It compares saved size and loss in quality by [SSIM](https://github.com/darosh/image-ssim-js)
 
@@ -22,11 +22,11 @@ I suggest you empirically find out `quality` settings for `imagemin-webp` and `i
 
 
 ### Results
+![Logo](result.png)
 
-For imageset from this repo quality settings will be: webp - 80, mozjpeg - 85. And webp will win with 20% more savings. 
+For imageset from this repo quality settings to have equal SSIM will be: webp - 80, mozjpeg - 84. And webp will win with 28% more savings. 
 
-For different imagesets which I have tested with imagemin settings which returns equal SSIM, webp always win with savings varying from 15% to 30%.
+For different imagesets which I have tested with imagemin settings which returns equal SSIM, webp always win with savings varying from 20% to 30%.
 
 
- 
  
