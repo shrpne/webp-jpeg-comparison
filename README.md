@@ -1,5 +1,6 @@
-## webp-jpeg-comparsion
+## webp-jpeg-comparison
 
+[🇷🇺 Читать на русском](https://github.com/shrpne/webp-jpeg-comparsion/blob/master/README.ru.md)
 
 Here I try to find out if it is really worth to convert images to [webp](https://developers.google.com/speed/webp/) instead of serve them as minified jpeg.
 
@@ -18,7 +19,7 @@ npm start
 
 You can put your own images into `./src`
 
-I suggest you empirically find out `quality` settings for `imagemin-webp` and `imagemin-mozjpeg` which will return equal SSIM for compressed images. And then check what compression method will save more size.
+I suggest you empirically find out `quality` settings for `imagemin-webp` and `imagemin-mozjpeg` which will return equal SSIM for compressed images. And then check what compression method will save more bytes.
 
 
 ### Results
